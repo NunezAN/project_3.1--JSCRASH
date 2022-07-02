@@ -2,6 +2,41 @@
 // let fahrenheit = (celsius * 1.8)+ 32;
 // console.log(fahrenheit);
 
-let bool = '1' !== 1;  //== compares value === compares values and type
-                        //!= compers not value !== compares not value and type
-console.log(bool);
+// let bool = '1' !== 1;  //== compares value === compares values and type
+//                         //!= compers not value !== compares not value and type
+// console.log(bool);
+
+// -----CONDITIONALS-------
+
+// let subscribed = false;
+// let loggedIn = true;
+
+// if (subscribed === true) {
+//   console.log("show the video");
+// } else if (loggedIn == true) {
+//   console.log("tell user to upgrade");
+// } else {
+//   console.log("LOL Subscribe");
+// }
+//----------------------------------------------------------
+let cash = 39;
+let price = 40;
+
+if (cash>price){
+    let amountOwed = cash - price;
+    console.log(`you paid extra - heres your ${amountOwed} change`);
+}
+else if (cash === price){
+    console.log("you paid the exact amount");
+}
+else{
+    let amountNeeded = cash - price;
+    let saying = `not enough money, you still owe ${Math.abs(amountNeeded)} dollar`;
+    if (Math.abs(amountNeeded) <= 1)
+    {
+        console.log(saying);
+    }
+    else{
+        console.log(saying + "s");
+    }
+}
