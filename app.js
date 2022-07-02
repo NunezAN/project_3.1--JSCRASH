@@ -19,24 +19,41 @@
 //   console.log("LOL Subscribe");
 // }
 //----------------------------------------------------------
-let cash = 39;
-let price = 40;
+// let cash = 39;
+// let price = 40;
 
-if (cash>price){
-    let amountOwed = cash - price;
-    console.log(`you paid extra - heres your ${amountOwed} change`);
+// if (cash>price){
+//     let amountOwed = cash - price;
+//     console.log(`you paid extra - heres your ${amountOwed} change`);
+// }
+// else if (cash === price){
+//     console.log("you paid the exact amount");
+// }
+// else{
+//     let amountNeeded = cash - price;
+//     let saying = `not enough money, you still owe ${Math.abs(amountNeeded)} dollar`;
+//     if (Math.abs(amountNeeded) <= 1)
+//     {
+//         console.log(saying);
+//     }
+//     else{
+//         console.log(saying + "s");
+//     }
+// }
+
+let cash = 50;
+let price = 60;
+let isStoreOpen = true;                     //&& and || or
+
+if ( cash >= price || isStoreOpen ){
+    console.log('print the receipt')
 }
-else if (cash === price){
-    console.log("you paid the exact amount");
+
+let val = "";
+
+if (val){
+    console.log("truthy value",!!val)       //!!value to check if value is true or valse
 }
 else{
-    let amountNeeded = cash - price;
-    let saying = `not enough money, you still owe ${Math.abs(amountNeeded)} dollar`;
-    if (Math.abs(amountNeeded) <= 1)
-    {
-        console.log(saying);
-    }
-    else{
-        console.log(saying + "s");
-    }
+    console.log("falsy value",!!val)
 }
