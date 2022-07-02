@@ -41,19 +41,35 @@
 //     }
 // }
 
+// let cash = 50;
+// let price = 60;
+// let isStoreOpen = true;                     //&& and || or
+
+// if ( cash >= price || isStoreOpen ){
+//     console.log('print the receipt')
+// }
+
+// let val = "";
+
+// if (val){
+//     console.log("truthy value",!!val)       //!!value to check if value is true or valse
+// }
+// else{
+//     console.log("falsy value",!!val)
+// }
+
+//Ternary Operators
+
+// let subscribed = true;
+// let loggedIn = true;
+
+// let str = subscribed && loggedIn ? 'show the video': 'hide the video'
+// console.log(str);
+
 let cash = 50;
-let price = 60;
-let isStoreOpen = true;                     //&& and || or
+let price = 49;
+let isStoreOpen = true;
 
-if ( cash >= price || isStoreOpen ){
-    console.log('print the receipt')
-}
+let response = cash>=price && isStoreOpen ? "give receipt" : "do not give receipt"
 
-let val = "";
-
-if (val){
-    console.log("truthy value",!!val)       //!!value to check if value is true or valse
-}
-else{
-    console.log("falsy value",!!val)
-}
+console.log(response);
