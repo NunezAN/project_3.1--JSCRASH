@@ -66,10 +66,20 @@
 // let str = subscribed && loggedIn ? 'show the video': 'hide the video'
 // console.log(str);
 
-let cash = 50;
-let price = 49;
-let isStoreOpen = true;
+// let cash = 50;
+// let price = 49;
+// let isStoreOpen = true;
 
-let response = cash>=price && isStoreOpen ? "give receipt" : "do not give receipt"
+// let response = cash>=price && isStoreOpen ? "give receipt" : "do not give receipt"
 
-console.log(response);
+// console.log(response);
+
+
+//While loop
+
+let count = 1;
+
+while (count <= 10) {
+  console.log(count);
+  count++;
+}
