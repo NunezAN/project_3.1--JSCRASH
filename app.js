@@ -77,9 +77,14 @@
 
 //While loop
 
-let count = 1;
+// let count = 1;
 
-while (count <= 10) {
-  console.log(count);
-  count++;
+// while (count <= 10) {
+//   console.log(count);
+//   count++;
+// }
+
+//for loop
+for ( let i=100;i>0;i--){
+    console.log(i);
 }
