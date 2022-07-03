@@ -110,10 +110,28 @@
 //     console.log(word[i]);
 // }
 
-//function definition
-function welcomPersonToFes(firstName, lastName){
-    console.log(`Wellcome to FES, ${firstName} ${lastName}`);
+// //function definition
+// function welcomPersonToFes(firstName, lastName){
+//     console.log(`Wellcome to FES, ${firstName} ${lastName}`);
+// }
+// //call a funtion
+// welcomPersonToFes("Alex", "nunez");
+// welcomPersonToFes("David", "Doe");
+
+// function sumOfTwoNums(a,b){
+//     return a/b
+    
+// }
+// let a = 4;
+// let b=1;
+// console.log(`sum of 2 numbs: ${sumOfTwoNums(20,3)}`);
+
+//Convert Celsius to Fahrenheit  Question
+
+function celsiustoFahrenheit(celsius){
+    return (celsius * 1.8) + 32;
 }
-//call a funtion
-welcomPersonToFes("Alex", "nunez");
-welcomPersonToFes("David", "Doe");
+
+console.log(`0 celsius in fahrenheit is ${celsiustoFahrenheit(0)}`)
+console.log(`10 celsius in fahrenheit is ${celsiustoFahrenheit(10)}`)
+console.log(`30 celsius in fahrenheit is ${celsiustoFahrenheit(30)}`)
