@@ -104,8 +104,16 @@
 // }
 
 //print character by character of a word using for loop
-let word= "Frontend Simplified";
+// let word= "Frontend Simplified";
 
-for (i=0; i<word.length; i++) {
-    console.log(word[i]);
+// for (i=0; i<word.length; i++) {
+//     console.log(word[i]);
+// }
+
+//function definition
+function welcomPersonToFes(firstName, lastName){
+    console.log(`Wellcome to FES, ${firstName} ${lastName}`);
 }
+//call a funtion
+welcomPersonToFes("Alex", "nunez");
+welcomPersonToFes("David", "Doe");
