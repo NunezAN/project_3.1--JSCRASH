@@ -128,10 +128,17 @@
 
 //Convert Celsius to Fahrenheit  Question
 
-function celsiustoFahrenheit(celsius){
-    return (celsius * 1.8) + 32;
+// function celsiustoFahrenheit(celsius){
+//     return (celsius * 1.8) + 32;
+// }
+
+// console.log(`0 celsius in fahrenheit is ${celsiustoFahrenheit(0)}`)
+// console.log(`10 celsius in fahrenheit is ${celsiustoFahrenheit(10)}`)
+// console.log(`30 celsius in fahrenheit is ${celsiustoFahrenheit(30)}`)
+
+//second way to define a function 
+const myName = (name) =>{
+    return name;
 }
 
-console.log(`0 celsius in fahrenheit is ${celsiustoFahrenheit(0)}`)
-console.log(`10 celsius in fahrenheit is ${celsiustoFahrenheit(10)}`)
-console.log(`30 celsius in fahrenheit is ${celsiustoFahrenheit(30)}`)
+console.log(`My name is ${myName("Alex")}`);
