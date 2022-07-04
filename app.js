@@ -150,14 +150,18 @@
 // }
 //push to add element to the end of the array
 
-let arr = [20, 30, 40, 50, 100];
-    
-let newArr = arr.filter(finddiv10)      //call back function
-
-function finddiv10(x){
-    if (x % 20 == 0){
-        return true;
-    }
-}
-
+let arr = [20, 30, 40, 50, 100];                    //short hand call back function
+let newArr  = arr.filter(element => element<50);
 console.log(newArr);
+    
+// let newArr = arr.filter(finddiv10)      //call back function
+
+// function finddiv10(x){
+//     return x < 50;
+// }
+
+// console.log(newArr);
+
+// let grades = ["A+", "A", "FAIL"];
+
+// let newArr  = grades.filter(element => element<50);
