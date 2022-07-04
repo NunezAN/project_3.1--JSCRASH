@@ -143,12 +143,21 @@
 
 // console.log(`My name is ${myName("Alex")}`);
 
-let arr = [20, 30, 40, 50, 100];
+// let arr = [20, 30, 40, 50, 100];
 
-for(i= 0;i<arr.length;i++){
-    console.log(arr[i]);
-}
+// for(i= 0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
 //push to add element to the end of the array
-arr.push(200);
 
-console.log(arr);
+let arr = [20, 30, 40, 50, 100];
+    
+let newArr = arr.filter(finddiv10)      //call back function
+
+function finddiv10(x){
+    if (x % 20 == 0){
+        return true;
+    }
+}
+
+console.log(newArr);
