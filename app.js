@@ -166,13 +166,22 @@
 
 // let grades = ["A+", "A", "FAIL"];
 // let grades = ["FAIL", "FAIL","B"];
-let grades = ["FAIL"];
+// let grades = ["FAIL"];
 
 // let newArr  = grades.filter(element => element !=="FAIL");     //shorthand
 
-let newArr = grades.filter(findPassing);                    //longhand
-function findPassing(element){
-    return element !=="FAIL";
-}
+// let newArr = grades.filter(findPassing);                    //longhand
+// function findPassing(element){
+//     return element !=="FAIL";
+// }
 
-console.log(newArr);
+// console.log(newArr);
+let grades = ["A+", "A", "FAIL"];
+let goodGrades = [];
+
+for(i=0;i<grades.length;i++){
+    if (grades[i] !=="FAIL"){
+        goodGrades.push(grades[i]);
+    }
+}
+console.log(goodGrades);
