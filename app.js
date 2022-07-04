@@ -176,12 +176,17 @@
 // }
 
 // console.log(newArr);
-let grades = ["A+", "A", "FAIL"];
-let goodGrades = [];
+// let grades = ["A+", "A", "FAIL"];
+// let goodGrades = [];
 
-for(i=0;i<grades.length;i++){
-    if (grades[i] !=="FAIL"){
-        goodGrades.push(grades[i]);
-    }
-}
-console.log(goodGrades);
+// for(i=0;i<grades.length;i++){
+//     if (grades[i] !=="FAIL"){
+//         goodGrades.push(grades[i]);
+//     }
+// }
+// console.log(goodGrades);
+
+let arr= [1,4,9,16];                      //array map
+ let newArr= arr.map((element) => "A")
+
+ console.log(newArr);
