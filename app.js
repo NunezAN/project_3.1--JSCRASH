@@ -150,9 +150,9 @@
 // }
 //push to add element to the end of the array
 
-let arr = [20, 30, 40, 50, 100];                    //short hand call back function
-let newArr  = arr.filter(element => element<50);
-console.log(newArr);
+// let arr = [20, 30, 40, 50, 100];                    //short hand call back function
+// let newArr  = arr.filter(element => element<50);
+// console.log(newArr);
     
 // let newArr = arr.filter(finddiv10)      //call back function
 
@@ -162,6 +162,17 @@ console.log(newArr);
 
 // console.log(newArr);
 
-// let grades = ["A+", "A", "FAIL"];
+//----------------------------------------------
 
-// let newArr  = grades.filter(element => element<50);
+// let grades = ["A+", "A", "FAIL"];
+// let grades = ["FAIL", "FAIL","B"];
+let grades = ["FAIL"];
+
+// let newArr  = grades.filter(element => element !=="FAIL");     //shorthand
+
+let newArr = grades.filter(findPassing);                    //longhand
+function findPassing(element){
+    return element !=="FAIL";
+}
+
+console.log(newArr);
