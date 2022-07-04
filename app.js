@@ -186,7 +186,18 @@
 // }
 // console.log(goodGrades);
 
-let arr= [1,4,9,16];                      //array map
- let newArr= arr.map((element) => "A")
+// let arr= [1,4,9,16];                      //array map
+//  let newArr= arr.map((element) => "A")
 
- console.log(newArr);
+//  console.log(newArr);
+
+let dollars = [1,5,10,3];
+let dollars2 = [0, 10, 20];
+
+let cents = dollars.map(dollar => dollar * 100);
+let cents2 = dollars2.map(dollar =>{
+    return dollar*100
+})
+
+console.log(cents);
+console.log(cents2);
