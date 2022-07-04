@@ -255,18 +255,29 @@
 // login("anunekz@gmail.com", "1234")
 
 
-let users = []
+// let users = []
 
-function register(user){
-    users.push(user);
-}
+// function register(user){
+//     users.push(user);
+// }
 
-register({username: "Anun", 
-email:"anun@gmail.com",
-password: "password123",
-subscriptionStatus: "VIP",
-discordID:"Anun#19031",
-lessondsCompleted: [1,2,3,4,5]});
+// register({username: "Anun", 
+// email:"anun@gmail.com",
+// password: "password123",
+// subscriptionStatus: "VIP",
+// discordID:"Anun#19031",
+// lessondsCompleted: [1,2,3,4,5]});
 
 
-console.log(users);
+// console.log(users);
+
+
+//first way of accessing an element
+let c = document.querySelector('h1')
+console.log(c);
+
+//second way of accessing an element
+
+let t = document.getElementById('title')
+
+console.log(t)
