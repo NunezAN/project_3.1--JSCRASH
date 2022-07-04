@@ -137,8 +137,18 @@
 // console.log(`30 celsius in fahrenheit is ${celsiustoFahrenheit(30)}`)
 
 //second way to define a function 
-const myName = (name) =>{
-    return name;
-}
+// const myName = (name) =>{
+//     return name;
+// }
 
-console.log(`My name is ${myName("Alex")}`);
+// console.log(`My name is ${myName("Alex")}`);
+
+let arr = [20, 30, 40, 50, 100];
+
+for(i= 0;i<arr.length;i++){
+    console.log(arr[i]);
+}
+//push to add element to the end of the array
+arr.push(200);
+
+console.log(arr);
