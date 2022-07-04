@@ -281,3 +281,5 @@ console.log(c);
 let t = document.getElementById('title')
 
 console.log(t)
+
+document.querySelector('.title').innerHTML = "Frontend Simplified"
