@@ -272,14 +272,32 @@
 // console.log(users);
 
 
-//first way of accessing an element
-let c = document.querySelector('h1')
-console.log(c);
+// //first way of accessing an element
+// let c = document.querySelector('h1')
+// console.log(c);
 
-//second way of accessing an element
+// //second way of accessing an element
+// let t = document.getElementById('title')
 
-let t = document.getElementById('title')
+// console.log(t)
 
-console.log(t)
+// //change element from html  .innerHTML
+// document.querySelector('.title').innerHTML += " Frontend Simplified"
 
-document.querySelector('.title').innerHTML = "Frontend Simplified"
+// //change css  .style
+
+// document.querySelector(".title").style.color = "red"
+
+function changeTitleToRed(){
+    if(document.querySelector(".title").style.color == "red"){
+        document.querySelector(".title").style.color = "black";
+    }
+    else{
+
+        document.querySelector(".title").style.color = "red";
+    }
+}
+
+function toggleDarkMode(){
+    document.querySelector("body").classList.toggle("dark-theme");
+}
