@@ -208,50 +208,65 @@
 // }
 // console.log(cents);
 
-let userFirstName = "Alex";
-let userLastName = "Nunez";
-let userDiscordId = "anunez";
-let userSubscriptionStatus = "VIP";
+// let userFirstName = "Alex";
+// let userLastName = "Nunez";
+// let userDiscordId = "anunez";
+// let userSubscriptionStatus = "VIP";
 
-let user = [{
-    username: "Anun",
-    password:"123",
-    email:"anunez@gmail.com",
-    subscriptions:"VIP",
-    discordID: "anunez#01010103",
-    lessonCompleted: [0,1,2]
-},{
-    username: "Dmiti",
-    password:"12345",
-    email:"dmiti@gmail.com",
-    subscriptions:"VIP",
-    discordID: "dimim#01010103",
-    lessonCompleted: [0,1,2,3,4,5]
-}
-,{
-    username: "zen",
-    password:"12345",
-    email:"zen@gmail.com",
-    subscriptions:"VIP",
-    discordID: "zennnnn#01010103",
-    lessonCompleted: [0,1]
-}]
-let count=0;
-function login(email, password){
-    for(i=0;i<user.length;i++){
+// let user = [{
+//     username: "Anun",
+//     password:"123",
+//     email:"anunez@gmail.com",
+//     subscriptions:"VIP",
+//     discordID: "anunez#01010103",
+//     lessonCompleted: [0,1,2]
+// },{
+//     username: "Dmiti",
+//     password:"12345",
+//     email:"dmiti@gmail.com",
+//     subscriptions:"VIP",
+//     discordID: "dimim#01010103",
+//     lessonCompleted: [0,1,2,3,4,5]
+// }
+// ,{
+//     username: "zen",
+//     password:"12345",
+//     email:"zen@gmail.com",
+//     subscriptions:"VIP",
+//     discordID: "zennnnn#01010103",
+//     lessonCompleted: [0,1]
+// }]
+// let count=0;
+// function login(email, password){
+//     for(i=0;i<user.length;i++){
         
-        if(email === user[i].email){
-            if(password === user[i].password){
-                console.log("accepted access")
-            }
-            else{
-                console.log("incorrect password, try again bozo")
-            }
-            return;
-        }
-    }
-    console.log("could not find an email that matches");
+//         if(email === user[i].email){
+//             if(password === user[i].password){
+//                 console.log("accepted access")
+//             }
+//             else{
+//                 console.log("incorrect password, try again bozo")
+//             }
+//             return;
+//         }
+//     }
+//     console.log("could not find an email that matches");
+// }
+// login("anunekz@gmail.com", "1234")
+
+
+let users = []
+
+function register(user){
+    users.push(user);
 }
-login("anunekz@gmail.com", "1234")
+
+register({username: "Anun", 
+email:"anun@gmail.com",
+password: "password123",
+subscriptionStatus: "VIP",
+discordID:"Anun#19031",
+lessondsCompleted: [1,2,3,4,5]});
 
 
+console.log(users);
