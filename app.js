@@ -191,19 +191,67 @@
 
 //  console.log(newArr);
 
-let dollars = [1,5,10,3];
-let dollars2 = [0, 10, 20];
+// let dollars = [1,5,10,3];
+// let dollars2 = [0, 10, 20];
 
-// let cents = dollars.map(dollar => dollar * 100);
-// let cents2 = dollars2.map(dollar =>{
-//     return dollar*100
-// })
+// // let cents = dollars.map(dollar => dollar * 100);
+// // let cents2 = dollars2.map(dollar =>{
+// //     return dollar*100
+// // })
 
+// // console.log(cents);
+// // console.log(cents2);
+
+// let cents =[];
+// for(i=0;i<dollars.length;i++){
+//     cents.push(dollars[i]*100);
+// }
 // console.log(cents);
-// console.log(cents2);
 
-let cents =[];
-for(i=0;i<dollars.length;i++){
-    cents.push(dollars[i]*100);
+let userFirstName = "Alex";
+let userLastName = "Nunez";
+let userDiscordId = "anunez";
+let userSubscriptionStatus = "VIP";
+
+let user = [{
+    username: "Anun",
+    password:"123",
+    email:"anunez@gmail.com",
+    subscriptions:"VIP",
+    discordID: "anunez#01010103",
+    lessonCompleted: [0,1,2]
+},{
+    username: "Dmiti",
+    password:"12345",
+    email:"dmiti@gmail.com",
+    subscriptions:"VIP",
+    discordID: "dimim#01010103",
+    lessonCompleted: [0,1,2,3,4,5]
 }
-console.log(cents);
+,{
+    username: "zen",
+    password:"12345",
+    email:"zen@gmail.com",
+    subscriptions:"VIP",
+    discordID: "zennnnn#01010103",
+    lessonCompleted: [0,1]
+}]
+let count=0;
+function login(email, password){
+    for(i=0;i<user.length;i++){
+        
+        if(email === user[i].email){
+            if(password === user[i].password){
+                console.log("accepted access")
+            }
+            else{
+                console.log("incorrect password, try again bozo")
+            }
+            return;
+        }
+    }
+    console.log("could not find an email that matches");
+}
+login("anunekz@gmail.com", "1234")
+
+
